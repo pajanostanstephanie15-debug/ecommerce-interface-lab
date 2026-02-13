@@ -1,0 +1,30 @@
+<main>
+  <section class="shipping-info">
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+      
+      <label for="street">Street</label>
+      <input type="text" id="street" required>
+      
+      <label for="zip">Zip Code</label>
+      <input type="text" id="zip" required>
+    </fieldset>
+
+    <form class="payment-methods">
+      <h3>Payment Method</h3>
+      <label><input type="radio" name="pay" value="cc"> Credit Card</label>
+      <label><input type="radio" name="pay" value="pp"> PayPal</label>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <aside class="order-summary-sticky">
+    <h3>Order Summary</h3>
+    <p>Items: $120.00</p>
+    <p>Shipping: $5.00</p>
+    <hr>
+    <p><strong>Total: $125.00</strong></p>
+  </aside>
+</main>

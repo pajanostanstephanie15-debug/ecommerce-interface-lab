@@ -1,0 +1,30 @@
+<header>
+  <h2>Welcome back, Jane Doe</h2>
+  <nav>
+    <a href="#">Order History</a> | 
+    <a href="#">Profile Settings</a> | 
+    <a href="#">Wishlist</a>
+  </nav>
+</header>
+
+<section class="order-history">
+  <h3>Recent Purchases</h3>
+  <details>
+    <summary>Order #12345 - Delivered Oct 12</summary>
+    <dl>
+      <dt>Item:</dt> <dd>Mechanical Keyboard</dd>
+      <dt>Price:</dt> <dd>$150.00</dd>
+      <dt>Status:</dt> <dd>Completed</dd>
+    </dl>
+  </details>
+</section>
+
+<form action="/signup" method="POST">
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+  
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" required minlength="8">
+  
+  <button type="submit">Create Account</button>
+</form>
