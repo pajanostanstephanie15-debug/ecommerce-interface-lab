@@ -1,13 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
 <main>
   <section class="shipping-info">
     <fieldset>
       <legend>Shipping Address</legend>
       <label for="name">Full Name</label>
       <input type="text" id="name" required>
-      
+      <br>
       <label for="street">Street</label>
       <input type="text" id="street" required>
-      
+      <br>
       <label for="zip">Zip Code</label>
       <input type="text" id="zip" required>
     </fieldset>
@@ -16,6 +24,8 @@
       <h3>Payment Method</h3>
       <label><input type="radio" name="pay" value="cc"> Credit Card</label>
       <label><input type="radio" name="pay" value="pp"> PayPal</label>
+      <label><input type="radio" name="pay" value="pp"> Gcash</label>
+      <label><input type="radio" name="pay" value="pp"> PayMaya</label>
       <button type="submit">Place Order</button>
     </form>
   </section>
@@ -28,3 +38,4 @@
     <p><strong>Total: $125.00</strong></p>
   </aside>
 </main>
+</html>

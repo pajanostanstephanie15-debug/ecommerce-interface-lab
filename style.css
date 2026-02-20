@@ -1,0 +1,120 @@
+/* --- Task 1: The Visual Foundation (Global Styles) --- */
+:root {
+  --primary-color: black;
+  --accent-color: white;
+  --bg-light: #f4f4f4;
+  --text-main: #333333;
+  --success-color: #27ae60;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sans-serif for body */
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif; /* Serif for headings */
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* --- Task 2: Interactive States & Transitions --- */
+a, button {
+  text-decoration: none; /* Remove underlines */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+a:hover, button:hover {
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+  text-decoration: underline;
+}
+
+button:active {
+  transform: scale(0.95); /* Pressed effect */
+}
+
+input:focus, button:focus {
+  outline: 2px solid var(--accent-color); /* Visual indicator for keyboard users */
+}
+
+/* --- Task 3: Product List Styling (product.html) --- */
+.product-grid article {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: white;
+  vertical-align: top;
+}
+
+/* Alternating background colors for items */
+.product-grid article:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.product-grid article:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* --- Task 4: Advanced Selectors & Pseudo-elements --- */
+
+/* Cart empty state (cart.html) */
+.empty-cart:empty::before {
+  content: "Your cart is currently empty.";
+  display: block;
+  padding: 20px;
+  color: gray;
+}
+
+/* Automatic Currency Symbol (using price class) */
+/* Note: Added .price class logic based on image instructions */
+.price::before, .cart-summary p strong::before {
+  content: "$";
+}
+
+/* Form validation styling (signup/account.html) */
+input:required {
+  border-left: 5px solid var(--accent-color);
+}
+
+input:valid {
+  border: 2px solid var(--success-color);
+}
+
+/* --- Task 5: Detailed Data Styling --- */
+
+/* Table styling (detail.html) */
+.product-info table tr td:first-child {
+  font-weight: bold;
+  color: var(--primary-color);
+  width: 150px;
+}
+
+/* Order history bullets (account.html) */
+.order-history details li::marker {
+  color: var(--accent-color);
+  content: "➔ ";
+}
+
+/* Stylized quotation marks for reviews (detail.html) */
+#reviews blockquote::before {
+  content: open-quote;
+  font-size: 2em;
+  color: var(--accent-color);
+  vertical-align: sub;
+}
+
+#reviews blockquote::after {
+  content: close-quote;
+  font-size: 2em;
+  color: var(--accent-color);
+  vertical-align: sub;
+}
