@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
+<body>
 
-<ul>
-  <li>
-    <img src="water_bottle.jpg" alt="Product Thumbnail">
-    <h3>Eco-Friendly Water Bottle</h3>
-    <p>$25.00</p>
-    <label for="item1-qty">Qty:</label>
-    <input type="number" id="item1-qty" value="1" min="0">
-  </li>
-</ul>
+<header>
+    <div class="logo">
+        <h2 style="background: var(--accent-gradient); background-clip: text; -webkit-text-fill-color: transparent;">EcoShop</h2>
+    </div>
+    <nav>
+            <a href="landing.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="account.html">Account</a>
+    </nav>
+</header>
 
-<section class="cart-summary">
-  <p>Subtotal: <strong>$25.00</strong></p>
-  <a href="checkout.html" class="btn-checkout">Proceed to Checkout</a>
-</section>
+<main class="container" style="max-width: 900px; margin: 0 auto; padding: 20px;">
+    <h1 style="margin-bottom: 20px; font-size: 1.8rem;">Shopping Cart</h1>
 
-<section class="empty-cart" hidden>
-  <p>Your cart is currently empty.</p>
-  <a href="products.html">Continue Shopping</a>
-</section>
+    <ul class="cart-list" style="list-style: none; padding: 0;">
+        <li class="cart-item">
+            <div class="cart-item-image">
+                <img src="water_bottle.jpg" alt="Water Bottle" style="width: 100px; height: 100px; object-fit: cover;">
+            </div>
+            
+            <div class="cart-item-details">
+                <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem;">Eco-Friendly Water Bottle</h3>
+                <p style="color: var(--text-muted); font-weight: bold;">$25.00</p>
+            </div>
+
+            <div class="cart-item-qty">
+                <label for="item1-qty" style="font-size: 0.9rem; margin-right: 5px;">Qty:</label>
+                <input type="number" id="item1-qty" value="1" min="0" style="width: 60px; padding: 5px; border: 1px solid var(--border-color); border-radius: 4px;">
+            </div>
+
+            <div class="cart-item-remove">
+                <button type="button" style="background: none; color: #ef4444; border: 1px solid #ef4444; padding: 5px 10px; font-size: 0.8rem;">Remove</button>
+            </div>
+        </li>
+        </ul>
+
+    <section class="cart-summary" style="background: white; padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow); margin-top: 30px; text-align: right;">
+        <p style="font-size: 1.2rem; margin-bottom: 15px;">Subtotal: <strong style="color: var(--accent-color);">$25.00</strong></p>
+        <div style="display: flex; justify-content: flex-end; gap: 10px;">
+            <a href="product.html" style="padding: 12px 20px; color: var(--text-muted); text-decoration: none; font-weight: 500;">Continue Shopping</a>
+            <a href="checkout.html" class="btn-checkout" style="text-decoration: none; display: inline-block;">Proceed to Checkout</a>
+        </div>
+    </section>
+
+    <section class="empty-cart" style="text-align: center; padding: 50px 0;" hidden>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">Your cart is currently empty.</p>
+        <a href="product.html" style="color: var(--accent-color); font-weight: bold;">Browse Products</a>
+    </section>
+</main>
+
+</body>
 </html>

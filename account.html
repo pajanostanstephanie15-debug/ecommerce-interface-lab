@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Jane Doe</h2>
+    <nav>
+      <a href="#">Order History</a>
+      <a href="#">Settings</a>
+      <a href="#">Wishlist</a>
+    </nav>
+  </header>
 
+  <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <section class="order-history" style="background: white; padding: 25px; border-radius: 12px; box-shadow: var(--shadow);">
+      <h3>Recent Purchases</h3>
+      <details style="margin-top: 15px; cursor: pointer;">
+        <summary style="font-weight: 600;">Order #12345 - Delivered Oct 12</summary>
+        <dl style="padding: 15px; background: #f9fafb; margin-top: 10px; border-radius: 8px;">
+          <dt>Item:</dt> <dd>Mechanical Keyboard</dd>
+          <dt>Price:</dt> <dd>$150.00</dd>
+          <dt>Status:</dt> <dd style="color: var(--success-color); font-weight: bold;">Completed</dd>
+        </dl>
+      </details>
+    </section>
 
-<header>
-  <h2>Welcome back, Jane Doe</h2>
-  <nav>
-    <a href="#">Order History</a> | 
-    <a href="#">Profile Settings</a> | 
-    <a href="#">Wishlist</a>
-  </nav>
-</header>
-
-<section class="order-history">
-  <h3>Recent Purchases</h3>
-  <details>>
-    <summary>Order #12345 - Delivered Oct 12</summary>
-    <dl>
-      <dt>Item:</dt> <dd>Mechanical Keyboard</dd>
-      <dt>Price:</dt> <dd>$150.00</dd>
-      <dt>Status:</dt> <dd>Completed</dd>
-    </dl>
-  </details>
-</section>
-
-<form action="/signup" method="POST">
-  <label for="email">Email:</label>
-  <input type="email" id="email" required>
-  
-  <label for="pass">Password:</label>
-  <input type="password" id="pass" required minlength="8">
-  
-  <button type="submit">Create Account</button>
-</form>
+    <section style="background: white; padding: 25px; border-radius: 12px; box-shadow: var(--shadow); margin-top: 30px;">
+      <h3 style="margin-bottom: 20px;">Update Profile</h3>
+      <form action="/signup" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        <label for="email">Email</label>
+        <input type="email" id="email" style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;" required>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;" required minlength="8">
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+</body>
 </html>
