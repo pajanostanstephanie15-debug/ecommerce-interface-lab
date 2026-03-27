@@ -1,97 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details - EcoShop</title>
+<head>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<section>
+    <h2>Product Specifications</h2>
+    <table border="1">
+        <tr><th>Feature</th><th>Description</th></tr>
+        <tr><td>Material</td><td>" "</td></tr>
+        <tr><td>Color</td><td>Midnight Blue</td></tr>
+    </table>
 
-<header>
-    <div class="logo">
-        <h2 style="background: var(--accent-gradient); background-clip: text; -webkit-text-fill-color: transparent;">EcoShop</h2>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="landing.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </nav>
-</header>
+    <form action="cart.html">
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" name="quantity" min="1" value="1">
+        <button type="submit">Add to Cart</button>
+    </form>
 
-<main class="container" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
-    <section class="product-showcase" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
-        <div class="product-image" style="animation: fadeInUp 0.8s ease-out;">
-            <img src="wireless.jpg" alt="Wireless Headphones" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow);">
-        </div>
-
-        <div class="product-info" style="animation: fadeInUp 1s ease-out;">
-            <span style="color: var(--accent-color); font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Premium Audio</span>
-            <h1 style="font-size: 2.5rem; margin: 10px 0;">Wireless Headphones</h1>
-            <p style="font-size: 1.5rem; color: var(--accent-color); font-weight: bold; margin-bottom: 20px;">$99.00</p>
-            
-            <p style="color: var(--text-muted); margin-bottom: 30px;">
-                Experience studio-quality sound with our latest noise-canceling technology. 
-                Perfect for travel, work, and everything in between.
-            </p>
-
-            <form action="/add-to-cart" method="POST" style="display: flex; gap: 10px; align-items: center;">
-                <div style="display: flex; flex-direction: column;">
-                    <label for="qty" style="font-size: 0.8rem; color: var(--text-muted);">Quantity</label>
-                    <input type="number" id="qty" name="quantity" min="1" value="1" style="padding: 10px; border: 1px solid var(--border-color); border-radius: 8px; width: 70px;">
-                </div>
-                <button type="submit" class="btn-primary" style="flex: 1; margin-top: 18px;">Add to Cart</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="specs-section" style="margin-top: 60px;">
-        <h2 style="margin-bottom: 20px;">Technical Specifications</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Material</strong></td>
-                        <td>Brushed Aluminum & Vegan Leather</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Battery Life</strong></td>
-                        <td>Up to 40 Hours</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Connectivity</strong></td>
-                        <td>Bluetooth 5.2 & Wired 3.5mm</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Weight</strong></td>
-                        <td>1.2 lbs</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id="reviews" style="margin-top: 60px; padding-bottom: 40px;">
-        <h2 style="margin-bottom: 30px;">Customer Reviews</h2>
-        <article class="card" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow);">
-            <header style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                <strong>Alex J.</strong>
-                <span style="color: #f59e0b;">★★★★☆</span>
-            </header>
-            <blockquote style="font-style: italic; color: var(--text-muted);">
-                "Great build quality, though a bit heavy after long use. The sound is crystal clear!"
-            </blockquote>
+    <section id="reviews">
+        <h3>User Reviews</h3>
+        <article>
+            <p><strong>Jane Doe:</strong> Great quality!</p>
+            <blockquote>"The best purchase I've made this year."</blockquote>
         </article>
     </section>
-</main>
-
-</body>
-</html>
+</section>
