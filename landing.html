@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to EcoShop | Premium Lifestyle</title>
+    <title>Store | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>TechStore</h1>
+        <nav>
+            <ul class="nav-grid">
+                <li><a href="landing.html" class="nav-card">Home</a></li>
+                <li><a href="products.html" class="nav-card">Shop</a></li>
+                <li><a href="cart.html" class="nav-card">Cart</a></li>
+                <li><a href="account.html" class="nav-card">User</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <div class="logo">
-        <h2 style="background: var(--accent-gradient); background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.8rem;">EcoShop</h2>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="product.html">Shop</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="account.html">Account</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <section class="hero">
+            <h1>Upgrade Your Gear</h1>
+            <p>Experience the next generation of mobile tech.</p>
+            <a href="products.html"><button class="btn-primary">Shop Now</button></a>
+        </section>
 
-<main>
-    <section class="hero">
-        <div style="max-width: 700px; animation: fadeInUp 1s ease-out;">
-            <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px;">Upgrade Your Everyday Essentials</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px;">Discover the latest sustainable trends with our curated premium collection.</p>
-            <button type="button" onclick="location.href='product.html'" style="padding: 15px 40px; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                Shop the Collection
-            </button>
-        </div>
-    </section>
-
-    <section id="featured" style="padding: 60px 5%; text-align: center;">
-        <h2 style="margin-bottom: 40px; font-size: 2rem;">Featured Categories</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-            <div class="card" style="flex: 1; min-width: 250px; background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
-                <h3 style="color: var(--accent-color);">Electronics</h3>
-                <p style="color: var(--text-muted);">High-performance gadgets.</p>
-            </div>
-            <div class="card" style="flex: 1; min-width: 250px; background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
-                <h3 style="color: var(--accent-color);">Eco-Home</h3>
-                <p style="color: var(--text-muted);">Sustainable living made easy.</p>
-            </div>
-            <div class="card" style="flex: 1; min-width: 250px; background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow);">
-                <h3 style="color: var(--accent-color);">Lifestyle</h3>
-                <p style="color: var(--text-muted);">For the modern explorer.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="discounted" style="background: var(--primary-color); color: white; padding: 80px 5%; text-align: center; margin: 20px; border-radius: var(--radius);">
-        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 15px;">Summer Sale</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 30px;">Up to <span style="color: var(--accent-color); font-weight: bold; font-size: 2rem;">50% OFF</span> on selected items!</p>
-        <button type="button" style="background: white; color: var(--primary-color);">Claim Discount</button>
-    </section>
-</main>
-
+    </main>
 </body>
 </html>
